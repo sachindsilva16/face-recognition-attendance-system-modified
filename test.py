@@ -41,8 +41,11 @@ while True:
         distances, indices = knn.kneighbors(resized_img, n_neighbors=3)
         print(distances)
         
+        
+        
+        # MODIFIEDDD PART!!!!!
         # Define a threshold for unknown faces
-        threshold = 2100  # You can adjust this threshold
+        threshold = 2500  # You can adjust this threshold
         
         if distances[0][0] > threshold:
             output = "Unknown"

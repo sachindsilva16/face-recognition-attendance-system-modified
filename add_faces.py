@@ -41,7 +41,7 @@ else:
 
             resized_img=cv2.resize(crop_img, (50,50)) # Resizing the image with the help of the coordinates of the face.
 
-            if len(faces_data)<=100 and i%10==0: # we need to stop adding images. Also we will be taking 10 frames so hence we are taking the modulus by 10.
+            if len(faces_data)<=50 and i%10==0: # we need to stop adding images. Also we will be taking 10 frames so hence we are taking the modulus by 10.
                 faces_data.append(resized_img) # Whatever the new faces detected, it will be added to `faces_data` list.
             i=i+1 # Increment the value of i --> increment number of frames added.
 
