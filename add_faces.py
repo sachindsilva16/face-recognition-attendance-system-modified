@@ -46,9 +46,9 @@ while True: # Creating an infinite loop
 
 
         # This is basically to tell how many pictures u can add. It takes frame, length of `faces_data`, coordinates,font face, font size, color, thickness.
-        cv2.putText(frame, str(len(faces_data)), (50,50), cv2.FONT_HERSHEY_COMPLEX, 1, (50,50,255), 1)
+        cv2.putText(frame, str(len(faces_data)), (50,50), cv2.FONT_HERSHEY_COMPLEX, 1, (239,167,239), 1)
 
-        cv2.rectangle(frame, (x,y), (x+w, y+h), (50,50,255), 1) # Rectangle frame followed by giving the coordinate values along with width and height, followed by (50,50,225)--> RED COLOR which the frame border color and 1 represents the thickness
+        cv2.rectangle(frame, (x,y), (x+w, y+h), (239,167,239), 1) # Rectangle frame followed by giving the coordinate values along with width and height, followed by (50,50,225)--> RED COLOR which the frame border color and 1 represents the thickness
     cv2.imshow("Frame",frame) 
 
     k=cv2.waitKey(1) # Defining a binding function, to wait until the user presses a key.
